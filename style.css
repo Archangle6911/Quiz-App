@@ -1,0 +1,328 @@
+:root {
+  --bg-1: #0d111b;
+  --bg-2: #090d16;
+  --bg-3: #06080f;
+
+  --text-main: #f1f5f9;
+  --text-muted: #cbd5e1;
+
+  --btn-bg: #e2e8f0;
+  --btn-text: #0f172a;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, var(--bg-1), var(--bg-2), var(--bg-3));
+  color: var(--text-main);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px 7vw;
+  position: relative;
+}
+
+/* GRID OVERLAY */
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* BLOBS */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(4px);
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+.blob-1 {
+  width: 180px;
+  height: 180px;
+  top: 40px;
+  left: 40px;
+  background: rgba(30, 58, 138, 0.6);
+}
+
+.blob-2 {
+  width: 230px;
+  height: 230px;
+  bottom: 40px;
+  left: 400px;
+  background: rgba(190, 24, 93, 0.45);
+}
+
+.blob-3 {
+  width: 260px;
+  height: 260px;
+  top: 120px;
+  right: 110px;
+  background: rgba(76, 29, 149, 0.55);
+}
+
+.blob-4 {
+  width: 180px;
+  height: 180px;
+  bottom: 70px;
+  right: 300px;
+  background: rgba(22, 163, 74, 0.45);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 35px;
+}
+
+/* BUTTON */
+.btn-primary {
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* ICON ROW */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.icon-pill {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-links a {
+    margin-left: 18px;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    margin-top: 60px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn-primary {
+    padding: 12px 32px;
+    font-size: 0.85rem;
+  }
+
+  .icon-row {
+    gap: 18px;
+  }
+
+  .icon-pill {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  /* shrink & move blobs so they don't cover content */
+  .blob-1 {
+    width: 140px;
+    height: 140px;
+    top: 20px;
+    left: -20px;
+  }
+
+  .blob-2 {
+    width: 190px;
+    height: 190px;
+    left: 40%;
+    bottom: -80px;
+  }
+
+  .blob-3 {
+    width: 210px;
+    height: 210px;
+    right: -40px;
+  }
+
+  .blob-4 {
+    width: 150px;
+    height: 150px;
+    right: 10%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .navbar {
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+
+  .nav-links a {
+    margin-left: 12px;
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.25;
+    padding: 0 6px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+
+  .btn-primary {
+    padding: 10px 26px;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+
+  .icon-row {
+    gap: 14px;
+  }
+
+  .icon-pill {
+    width: 46px;
+    height: 46px;
+    font-size: 1.1rem;
+  }
+
+  /* blobs even smaller on tiny screens */
+  .blob-1 {
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    left: -40px;
+  }
+
+  .blob-3 {
+    width: 170px;
+    height: 170px;
+    top: 90px;
+    right: -60px;
+  }
+
+  .blob-2 {
+    width: 160px;
+    height: 160px;
+    bottom: -90px;
+    left: 30%;
+  }
+
+  .blob-4 {
+    display: none; /* hide one to reduce clutter */
+  }
+}
