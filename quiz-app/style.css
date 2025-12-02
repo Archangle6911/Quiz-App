@@ -175,8 +175,6 @@ body {
   font-size: 1.4rem;
 }
 
-/* ========== RESPONSIVE ========== */
-
 /* Tablets & small laptops */
 @media (max-width: 768px) {
   .page {
