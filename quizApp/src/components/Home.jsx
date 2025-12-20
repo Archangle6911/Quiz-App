@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -8,8 +9,8 @@ export default function Home() {
       <header className="navbar">
         <div className="logo">QuizMaster</div>
         <nav className="nav-links">
-          <a href="#">About</a>
-          <a href="#">Login</a>
+          <Link to = "/about">About</Link>
+          <Link to = "/login">Login</Link>
         </nav>
       </header>
 
