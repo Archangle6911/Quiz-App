@@ -43,7 +43,7 @@ The design seen locally(localhost:3000) is the reference design for deployment.
 🌐 API-based dynamic questions
 🌙 Dark mode
 
-    👤 Author 
+ 👤 Author 
 Ali Munir 
 Software Engineering Student 
 Co-founder & Admin — Harar Dev Center
