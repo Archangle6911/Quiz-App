@@ -1,27 +1,29 @@
-Quiz App 
+          🧠 Quiz App
 A modern, interactive quiz app built with React 
 
-Overview 
-The Quiz App is a responsive and user-friendly web application designed to test users' knowledge through multiple-choice questions. it focused on simplicity, clean UI, and smooth user experience while demonstratind core React concepts and front-end best practies.
-This project was built as part of my learning journey in Software engineering and front-end development, with an emphasis on real-world structure and deployment readiness.
+   📌 Overview
+   
+The Quiz App is a responsive and user-friendly web application designed to test users’ knowledge through multiple-choice questions. It focuses on simplicity, clean UI, and smooth user experience while demonstrating core React concepts and front-end best practices.
 
-Fearures 
-. Multiple-choice quiz questions
-. Real-time score calculation
-. Restart quiz functionality
-. Clean and intuitive UI design
-. Fully responsive (mobile & desktop)
-. Fast performance with modern tooling
+This project was built as part of my learning journey in software engineering and front-end development, with an emphasis on real-world structure and deployment readiness.
 
-Technologies Used 
-. React (UI development)
-. JavaScript(ES6+)
-. HTML5
-. CSS3
-. Vite / Create React App (depending on setup)
-. Vercel (deployment) 
+   ✨ Features
+🎯 Multiple-choice quiz questions
+📊 Real-time score calculation
+🔄 Restart quiz functionality
+🧩 Clean and intuitive UI design
+📱 Fully responsive (mobile & desktop)
+⚡ Fast performance with modern tooling
 
-Design Philosophy 
+🛠️ Technologies Used
+React (UI development)
+JavaScript (ES6+)
+HTML5
+CSS3
+Vite / Create React App (depending on setup)
+Vercel (deployment)
+
+🎨 Design Philosophy 
 The UI is intentionally minimal and focused to:
 . Avoid distractions
 . Improve usability
@@ -29,20 +31,20 @@ The UI is intentionally minimal and focused to:
 . Match modern web standards
 The design seen locally(localhost:3000) is the reference design for deployment.
 
-Known Limitations 
+🧪 Known Limitations 
 . Some edge-case validations can be improved
 . Questions data is currently static
 . Future enhancements planned(See below)
 
-Future Improvements 
-. Timer-based questions
-. Score analythics & history
-. User authentication
-. API-based dynamic questions
-. Dark Mode
+🔮 Future Improvements
+⏱️ Timer-based questions
+📈 Score analytics & history
+🔐 User authentication
+🌐 API-based dynamic questions
+🌙 Dark mode
 
-Author 
+👤 Author 
 Ali Munir 
 Software Engineering Student 
-Co-founder & Admin at Harar Dev Center
+Co-founder & Admin — Harar Dev Center
 . GitHub: @Archangle6911
